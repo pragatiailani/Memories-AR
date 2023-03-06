@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  font-size: 3em;
+}
+
+.subtitle {
+  font-size: 1.5em;
+}
+
+.subtext {
+  font-size: 0.7em;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 5vh 0;
+}
+
+.container .img_panel {
+  padding: 0 2vh;
+  width: 55%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .img_panel img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.container .form_panel {
+  padding: 0 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 1.5vh;
+  width: 45%;
+  height: 100%;
+}
+
+.container .form_panel .subtitle {
+  color: #979797;
+}
+
+.container .form_panel .subtext {
+  font-weight: bold;
+}
+
+.container .form_panel p {
+  width: 50%;
+  text-align: center;
+}
+
+.container .form_panel .smalltext {
+  font-size: 0.6em;
+  position: relative;
+  font-weight: bold;
+}
+
+.container .form_panel .smalltext::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translateX(-105%);
+          transform: translateX(-105%);
+  background: -webkit-gradient(linear, right top, left top, from(#d52672), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, #d52672 0%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+}
+
+.container .form_panel .smalltext::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+  background: -webkit-gradient(linear, left top, right top, from(#d52672), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, #d52672 0%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+}
+
+.container .form_panel .googleIcon {
+  width: 7vh;
+  height: 7vh;
+  background: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container .form_panel .googleIcon img {
+  height: 65%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.container .form_panel .appLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55%;
+}
+
+.container .form_panel .appLinks div {
+  padding: 0 1vh;
+}
+
+.container .form_panel .appLinks div img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.verification {
+  padding: 0;
+}
+
+.verification .img_panel {
+  width: 50%;
+  padding: 0;
+}
+
+.verification .img_panel img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.verification .form_panel {
+  width: 50%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .container .img_panel {
+    width: 50%;
+  }
+  .container .form_panel {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .verification .img_panel {
+    display: none;
+  }
+  .verification .form_panel {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container .img_panel {
+    padding: 1vh;
+    height: 30%;
+    width: 100%;
+  }
+  .container .form_panel {
+    height: auto;
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
